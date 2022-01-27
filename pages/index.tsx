@@ -5,9 +5,9 @@ export default function Home() {
     <div className="flex h-full flex-col">
       <p className="my-2 px-6  pt-2 font-medium">
         Hi! I am CS student at Politechnika Poznanska and self taught Web
-        Developer. I know backend and frontend so I guess I am Fullstack
-        Developer. I know JS,TS (Node.js and React) and tools comming with it. I
-        am creator of npm package called pubs-db :D.
+        Developer. I know a little bit of backend and frontend as well so I that
+        makes me Fullstack Developer. I know JS,TS (Node.js and React) and tools
+        comming with it. I am creator of npm package called pubs-db :D.
       </p>
       <div className="h-full border-t bg-slate-200 p-2 px-6 dark:bg-slate-600">
         <h1 className="text-xl font-semibold ">What I can do:</h1>

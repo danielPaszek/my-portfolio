@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'start-grad': '#3EECAC',
-        'end-grad': '#EE74E1',
+        'start-grad': '#FF0EED',
+        'end-grad': '#00A2FF',
       },
     },
   },

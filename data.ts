@@ -30,7 +30,7 @@ export const service: IService[] = [
   {
     title: 'Fullstack Developer',
     about:
-      'Worked with <b>Next.js</b> and <b>Typescript</b> and loved it. Stuff like tRPC, Prisma, PlanetScale/MongoDB are really usefull and I used them a lot',
+      'Worked with <b>Next.js</b> and <b>Typescript</b> and loved it. Stuff like tRPC, Prisma, PlanetScale/MongoDB are really lovely to work with and I used them a lot',
     Icon: SiNextdotjs,
   },
   {

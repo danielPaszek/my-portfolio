@@ -27,7 +27,7 @@ const Resume: React.FC<resumeProps> = ({}) => {
           <h1 className="text-xl font-medium">Languages:</h1>
           <div className="">
             {languages.map((el) => (
-              <Bar item={el} />
+              <Bar key={el.name} item={el} />
             ))}
           </div>
         </div>
@@ -35,7 +35,7 @@ const Resume: React.FC<resumeProps> = ({}) => {
           <h1 className="text-xl font-medium">Tools:</h1>
           <div className="">
             {tools.map((el) => (
-              <Bar item={el} />
+              <Bar key={el.name} item={el} />
             ))}
           </div>
         </div>
