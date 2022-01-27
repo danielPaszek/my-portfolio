@@ -56,7 +56,7 @@ const Sidebar: React.FC<SidebarProps> = ({}) => {
         onClick={() => changeTheme()}
         className="rounded-xl bg-gradient-to-r from-start-grad to-end-grad px-3 py-2 "
       >
-        Toggle Dark Mode
+        {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
       </button>
     </div>
   )
