@@ -10,3 +10,22 @@ export interface ISkill {
   level: number
   Icon: IconType
 }
+
+export interface IProject {
+  name: string
+  description: string
+  imagePath: string
+  deployedUrl?: string
+  githubUrl: string
+  category: Category[]
+  keyTechs: string[]
+}
+
+export type Category = 'node' | 'react' | 'my own' | 'from tutorial'
+export const allCategories: (Category | 'all')[] = [
+  'all',
+  'node',
+  'react',
+  'my own',
+  'from tutorial',
+]

@@ -21,7 +21,7 @@ const Sidebar: React.FC<SidebarProps> = ({}) => {
         width={128}
         layout="fixed"
       />
-      <h3 className="my-4 text-3xl tracking-wider">
+      <h3 className="my-4 text-center text-3xl tracking-wider">
         <span>Daniel</span> Paszek
       </h3>
       <p className="w-[80%] rounded-2xl bg-slate-200 px-2 py-1 text-center dark:bg-slate-600">

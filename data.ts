@@ -1,7 +1,7 @@
 import { RiComputerLine } from 'react-icons/ri'
 import { FiDatabase } from 'react-icons/fi'
-import { IService, ISkill } from './types'
-import { AiFillGithub } from 'react-icons/ai'
+import { IProject, IService, ISkill } from './types'
+import { AiFillGithub, AiOutlineApi } from 'react-icons/ai'
 import {
   SiJavascript,
   SiNextdotjs,
@@ -11,7 +11,6 @@ import {
   SiReact,
   SiTypescript,
 } from 'react-icons/si'
-import { ImDatabase } from 'react-icons/im'
 import { BiBrain } from 'react-icons/bi'
 
 export const service: IService[] = [
@@ -92,18 +91,58 @@ export const tools: ISkill[] = [
     Icon: SiNodedotjs,
   },
   {
-    name: 'Github',
+    name: 'REST/CRUD',
     level: 65,
-    Icon: AiFillGithub,
+    Icon: AiOutlineApi,
   },
   {
     name: 'Design Patterns',
     level: 60,
     Icon: BiBrain,
   },
+
   {
-    name: 'ORMs',
+    name: 'Github',
     level: 60,
-    Icon: ImDatabase,
+    Icon: AiFillGithub,
+  },
+]
+
+export const projects: IProject[] = [
+  {
+    name: 'InMemoryDatabase',
+    description: 'npm package to manage small memory db',
+    category: ['node', 'my own'],
+    githubUrl: 'https://github.com/danielPaszek/inMemoryDatabase',
+    imagePath: '/images/npm.png',
+    keyTechs: ['node', 'Typescript', 'Design Patterns'],
+  },
+  {
+    name: 'everything in One',
+    description:
+      'Project that started from tutorial but I added a lot more functionalities',
+    category: ['react', 'my own', 'from tutorial'],
+    githubUrl: 'https://github.com/danielPaszek/testing-skills',
+    imagePath: '/images/everything.png',
+    keyTechs: ['react', 'Javascript', 'Firebase'],
+    deployedUrl: 'https://slack-clone-b8d74.web.app/',
+  },
+  {
+    name: 'LiReddit',
+    description: 'Project from 14h ben award fullstack tutorial',
+    category: ['react', 'from tutorial', 'node'],
+    githubUrl:
+      'https://github.com/danielPaszek/fullstack-graphql-from-tutorial',
+    imagePath: '/images/lireddit.png',
+    keyTechs: ['react/Next', 'Typescript', 'Postgres', 'GraphQL'],
+  },
+  {
+    name: 'Netflix Clone',
+    description: 'Project from Sonny Sanga tutorial',
+    category: ['react', 'from tutorial'],
+    githubUrl: 'https://github.com/danielPaszek/netflix-clone-from-tutorial',
+    imagePath: '/images/netflix.png',
+    keyTechs: ['react', 'Javascript'],
+    deployedUrl: 'https://netflix-clone-eae8a.firebaseapp.com/',
   },
 ]
