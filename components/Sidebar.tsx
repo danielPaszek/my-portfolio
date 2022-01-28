@@ -1,17 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from 'next/image'
 import profilePic from '../public/kapitan.jpg'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { GoLocation } from 'react-icons/go'
-import { useTheme } from 'next-themes'
+import useDarkMode from '../hooks/useDarkMode'
 
 interface SidebarProps {}
 
 const Sidebar: React.FC<SidebarProps> = ({}) => {
-  const { theme, setTheme } = useTheme()
-  const changeTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light')
-  }
+  const [darkTheme, setDarkTheme] = useDarkMode()
+  const changeTheme = () => setDarkTheme((el: any) => !el)
+
   return (
     <div className="flex flex-col items-center gap-3 py-5">
       <Image
@@ -52,12 +51,16 @@ const Sidebar: React.FC<SidebarProps> = ({}) => {
         <p>paszekdaniel2001@gmail.com</p>
         <p>694720250</p>
       </div>
-      <button
-        onClick={() => changeTheme()}
-        className="rounded-xl bg-gradient-to-r from-start-grad to-end-grad px-3 py-2 "
-      >
-        {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
-      </button>
+      <div suppressHydrationWarning={true}>
+        {process.browser && (
+          <button
+            onClick={() => changeTheme()}
+            className="rounded-xl bg-gradient-to-r from-start-grad to-end-grad px-3 py-2 font-medium"
+          >
+            {darkTheme ? 'Light Mode' : 'Dark Mode'}
+          </button>
+        )}
+      </div>
     </div>
   )
 }
