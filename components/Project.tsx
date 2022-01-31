@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
+import { flushSync } from 'react-dom'
 import Image from 'next/image'
 import { IProject } from '../types'
 import { AiFillGithub, AiOutlineClose } from 'react-icons/ai'
@@ -8,7 +9,15 @@ interface ProjectProps {
 }
 
 const Project: React.FC<ProjectProps> = ({ project }) => {
+  const myRef = useRef<HTMLDivElement>(null)
   const [showDetails, setShowDetails] = useState(false)
+  const onShowDetails = () => {
+    flushSync(() => setShowDetails(true))
+    myRef.current?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center',
+    })
+  }
   return (
     <div>
       <Image
@@ -17,12 +26,12 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
         layout="responsive"
         src={project.imagePath}
         className="cursor-pointer"
-        onClick={() => setShowDetails(true)}
+        onClick={() => onShowDetails()}
       />
       <p className="my-2 text-center">{project.name}</p>
       {showDetails && (
-        <div className="absolute top-0 left-0 z-10 grid h-full w-full gap-x-10 bg-slate-200 px-6 py-4 dark:bg-gray-900 md:grid-cols-2">
-          <div className="h-full">
+        <div className="absolute top-0 left-0 z-10 grid h-full w-full auto-rows-min gap-y-28 gap-x-10 bg-slate-200 px-6 py-4 dark:bg-gray-900 md:grid-cols-2">
+          <div ref={myRef}>
             <img src={project.imagePath} />
             <div className="my-4 flex items-center justify-evenly space-x-1">
               <a
@@ -46,9 +55,9 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
           <div className="">
             <h2 className="my-4 text-xl">{project.name}</h2>
             <p>{project.description}</p>
-            <div className="mt-5 flex flex-wrap justify-evenly  text-sm">
+            <div className="mt-5 flex flex-wrap justify-evenly text-sm">
               {project.keyTechs.map((el) => (
-                <span className="rounded-md bg-slate-400 p-2 px-3  dark:bg-slate-600">
+                <span className="my-2 rounded-md bg-slate-400 p-2  px-3 dark:bg-slate-600">
                   {el}
                 </span>
               ))}
@@ -58,7 +67,7 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
             className="absolute top-3 right-3 rounded-full p-1"
             onClick={() => setShowDetails(false)}
           >
-            <AiOutlineClose size={30} />
+            <AiOutlineClose size={40} className="" />
           </button>
         </div>
       )}

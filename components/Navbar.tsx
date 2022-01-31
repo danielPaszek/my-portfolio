@@ -26,7 +26,7 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
                 <a className="mr-2">
                   <span
                     onClick={() => setActiveItem(el)}
-                    className=" capitalize hover:text-end-grad"
+                    className="mx-2 rounded-xl bg-gradient-to-r from-start-grad to-end-grad px-3 py-2 font-medium capitalize"
                   >
                     {el}{' '}
                   </span>
