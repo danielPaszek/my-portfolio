@@ -17,24 +17,24 @@ export const service: IService[] = [
   {
     title: 'Frontend Developer',
     about:
-      'I have decent knowledge of <b>React.js</b> and Redux. Also I know CSS pretty good and use <b>tailwindcss</b> daily. I use ES6+ and Typescript too',
+      'I have decent knowledge of <b>React.js</b>. Also I know CSS pretty good and use <b>tailwindcss</b> daily. I use ES6+ and Typescript too',
     Icon: RiComputerLine,
   },
   {
     title: 'Backend Developer',
     about:
-      'handle database, server and api using <b>Express</b>. I have pretty good knowledge of <b>SQL</b> and orms(Prisma,TypeORM).I know basics of Python too',
+      'handle database, server and api using <b>Express</b>. I have decent knowledge of <b>SQL</b> and orms(Prisma,TypeORM).I know basics of Python too',
     Icon: FiDatabase,
   },
   {
     title: 'Fullstack Developer',
     about:
-      'Worked with <b>Next.js</b> and <b>Typescript</b> and loved it. Stuff like tRPC, Prisma, PlanetScale/Firebase are really lovely to work with and I used them a lot',
+      'Worked with <b>Next.js</b> and <b>Typescript</b> and loved it. Stuff like tRPC, Prisma, PlanetScale/Firebase are really lovely to work with and I have used them a lot',
     Icon: SiNextdotjs,
   },
   {
     title: 'Github',
-    about: 'Use github to work solo or with colleague',
+    about: 'I Used github to work solo or with colleagues',
     Icon: AiFillGithub,
   },
   {
@@ -54,7 +54,7 @@ export const service: IService[] = [
 export const languages: ISkill[] = [
   {
     name: 'Typescript',
-    level: 100,
+    level: 90,
     Icon: SiTypescript,
   },
   {
@@ -70,7 +70,7 @@ export const languages: ISkill[] = [
   },
   {
     name: 'SQL',
-    level: 50,
+    level: 40,
     Icon: SiPostgresql,
   },
   {
@@ -82,28 +82,28 @@ export const languages: ISkill[] = [
 export const tools: ISkill[] = [
   {
     name: 'Next.js',
-    level: 75,
+    level: 70,
     Icon: SiNextdotjs,
   },
   {
     name: 'Express',
-    level: 70,
+    level: 65,
     Icon: SiNodedotjs,
   },
   {
     name: 'REST/CRUD',
-    level: 65,
+    level: 60,
     Icon: AiOutlineApi,
   },
   {
     name: 'Design Patterns',
-    level: 60,
+    level: 50,
     Icon: BiBrain,
   },
 
   {
     name: 'Github',
-    level: 60,
+    level: 50,
     Icon: AiFillGithub,
   },
 ]
