@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Image from 'next/image'
-import profilePic from '../public/kapitan.jpg'
+import profilePic from '../public/cv1.jpg'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { GoLocation } from 'react-icons/go'
 import useDarkMode from '../hooks/useDarkMode'
@@ -14,7 +14,7 @@ const Sidebar: React.FC<SidebarProps> = ({}) => {
   return (
     <div className="flex flex-col items-center gap-3 py-5">
       <Image
-        className=" rounded-full"
+        className="rounded-full"
         src={profilePic}
         alt="profile picture"
         height={128}
