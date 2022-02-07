@@ -12,6 +12,7 @@ import {
   SiTypescript,
 } from 'react-icons/si'
 import { BiBrain } from 'react-icons/bi'
+import { FaMobileAlt } from 'react-icons/fa'
 
 export const service: IService[] = [
   {
@@ -87,7 +88,7 @@ export const tools: ISkill[] = [
   },
   {
     name: 'Express',
-    level: 65,
+    level: 60,
     Icon: SiNodedotjs,
   },
   {
@@ -105,6 +106,11 @@ export const tools: ISkill[] = [
     name: 'Github',
     level: 50,
     Icon: AiFillGithub,
+  },
+  {
+    name: 'Responsive Design',
+    level: 50,
+    Icon: FaMobileAlt,
   },
 ]
 
