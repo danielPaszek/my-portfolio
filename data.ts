@@ -83,7 +83,7 @@ export const languages: ISkill[] = [
 export const tools: ISkill[] = [
   {
     name: 'Next.js',
-    level: 70,
+    level: 65,
     Icon: SiNextdotjs,
   },
   {
