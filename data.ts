@@ -55,23 +55,23 @@ export const service: IService[] = [
 export const languages: ISkill[] = [
   {
     name: 'Typescript',
-    level: 90,
+    level: 80,
     Icon: SiTypescript,
   },
   {
     name: 'Javascript',
-    level: 85,
+    level: 80,
     Icon: SiJavascript,
   },
 
   {
     name: 'React',
-    level: 60,
+    level: 50,
     Icon: SiReact,
   },
   {
     name: 'SQL',
-    level: 40,
+    level: 45,
     Icon: SiPostgresql,
   },
   {
@@ -83,17 +83,17 @@ export const languages: ISkill[] = [
 export const tools: ISkill[] = [
   {
     name: 'Next.js',
-    level: 65,
+    level: 60,
     Icon: SiNextdotjs,
   },
   {
     name: 'Express',
-    level: 60,
+    level: 55,
     Icon: SiNodedotjs,
   },
   {
     name: 'REST/CRUD',
-    level: 60,
+    level: 55,
     Icon: AiOutlineApi,
   },
   {
