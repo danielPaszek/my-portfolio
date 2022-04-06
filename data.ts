@@ -63,20 +63,19 @@ export const languages: ISkill[] = [
     level: 80,
     Icon: SiJavascript,
   },
-
+  {
+    name: 'SQL',
+    level: 60,
+    Icon: SiPostgresql,
+  },
   {
     name: 'React',
     level: 50,
     Icon: SiReact,
   },
   {
-    name: 'SQL',
-    level: 45,
-    Icon: SiPostgresql,
-  },
-  {
     name: 'Python',
-    level: 30,
+    level: 25,
     Icon: SiPython,
   },
 ]
@@ -88,7 +87,7 @@ export const tools: ISkill[] = [
   },
   {
     name: 'Express',
-    level: 55,
+    level: 60,
     Icon: SiNodedotjs,
   },
   {
@@ -97,20 +96,19 @@ export const tools: ISkill[] = [
     Icon: AiOutlineApi,
   },
   {
-    name: 'Design Patterns',
-    level: 50,
-    Icon: BiBrain,
-  },
-
-  {
-    name: 'Github',
-    level: 50,
-    Icon: AiFillGithub,
-  },
-  {
     name: 'Responsive Design',
     level: 50,
     Icon: FaMobileAlt,
+  },
+  {
+    name: 'Design Patterns',
+    level: 40,
+    Icon: BiBrain,
+  },
+  {
+    name: 'Github',
+    level: 40,
+    Icon: AiFillGithub,
   },
 ]
 
