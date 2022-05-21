@@ -4,51 +4,53 @@ import { IProject, IService, ISkill } from './types'
 import { AiFillGithub, AiOutlineApi } from 'react-icons/ai'
 import {
   SiJavascript,
+  SiLaravel,
   SiNextdotjs,
   SiNodedotjs,
+  SiPhp,
   SiPostgresql,
   SiPython,
   SiReact,
   SiTypescript,
 } from 'react-icons/si'
-import { BiBrain } from 'react-icons/bi'
+import { BiBookBookmark, BiBrain } from 'react-icons/bi'
 import { FaMobileAlt } from 'react-icons/fa'
 
 export const service: IService[] = [
   {
     title: 'Frontend Developer',
     about:
-      'I have decent knowledge of <b>React.js</b>. Also I know CSS pretty good and use <b>tailwindcss</b> daily. I use ES6+ and Typescript too',
+      'I have decent knowledge of <b>React.js</b>. Also I know CSS pretty good and use <b>tailwindcss</b>. I use JS,ES6+ and Typescript daily.',
     Icon: RiComputerLine,
   },
   {
     title: 'Backend Developer',
     about:
-      'handle database, server and api using <b>Express</b>. I have decent knowledge of <b>SQL</b> and orms(Prisma,TypeORM).I know basics of Python too',
+      'handle database, server and api using <b>PHP</b> or <b>Node.js</b>. I have decent knowledge of <b>SQL</b> and <b>MVC</b> structure.',
     Icon: FiDatabase,
+  },
+  {
+    title: 'PHP and Laravel',
+    about: 'I know PHP and basics of Laravel.',
+    Icon: SiPhp,
   },
   {
     title: 'Fullstack Developer',
     about:
-      'Worked with <b>Next.js</b> and <b>Typescript</b> and loved it. Stuff like tRPC, Prisma, PlanetScale/Firebase are really lovely to work with and I have used them a lot',
+      'Worked with <b>Next.js</b> and <b>Typescript</b> and loved it. Tools like tRPC, Prisma, PlanetScale/Firebase really speeds up your work.',
     Icon: SiNextdotjs,
   },
   {
     title: 'Github',
-    about: 'I Used github to work solo or with colleagues',
+    about: 'I Used github to work solo or with colleagues.',
     Icon: AiFillGithub,
   },
+
   {
-    title: 'Lorem',
+    title: 'Others',
     about:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet posuere odio',
-    Icon: AiFillGithub,
-  },
-  {
-    title: 'Lorem',
-    about:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet posuere odio',
-    Icon: AiFillGithub,
+      'I know basics of Python, R, Kotlin, C++. Mostly from my CS studies.',
+    Icon: BiBookBookmark,
   },
 ]
 
@@ -64,6 +66,11 @@ export const languages: ISkill[] = [
     Icon: SiJavascript,
   },
   {
+    name: 'PHP',
+    level: 60,
+    Icon: SiPhp,
+  },
+  {
     name: 'SQL',
     level: 60,
     Icon: SiPostgresql,
@@ -75,7 +82,7 @@ export const languages: ISkill[] = [
   },
   {
     name: 'Python',
-    level: 25,
+    level: 20,
     Icon: SiPython,
   },
 ]
@@ -91,6 +98,11 @@ export const tools: ISkill[] = [
     Icon: SiNodedotjs,
   },
   {
+    name: 'Laravel',
+    level: 60,
+    Icon: SiLaravel,
+  },
+  {
     name: 'REST/CRUD',
     level: 55,
     Icon: AiOutlineApi,
@@ -101,14 +113,14 @@ export const tools: ISkill[] = [
     Icon: FaMobileAlt,
   },
   {
-    name: 'Design Patterns',
-    level: 40,
-    Icon: BiBrain,
-  },
-  {
     name: 'Github',
     level: 40,
     Icon: AiFillGithub,
+  },
+  {
+    name: 'Design Patterns',
+    level: 35,
+    Icon: BiBrain,
   },
 ]
 
